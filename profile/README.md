@@ -4,8 +4,9 @@ Welcome to the **SNU-WRL** official organization! This guide helps members under
 ## Content
 
 1. Creating & Importing a Repository
-2. 
-3. README file templete
+2. Naming convention
+3. README.md file templete
+4. Managing Repositories via Git Commands
 
 ---
 
@@ -40,29 +41,25 @@ Use this when you want to move or copy your **personal repository** to the organ
 
 ---
 
-### 🏷 Name of the Repository (Naming Convention)
-To keep our organization organized, please follow our naming rules:
-* `robot-***` : Robotics hardware or control source code (e.g., `robot-shoe-control`)
-* `algorithm-***` : Core algorithm testing and research (e.g., `algorithm-imu-vqf`)
-* `study-***` : Internal seminars, papers, and learning logs.
+## 2. Naming convention
+To keep our organization organized and searchable, please follow this naming structure when creating or importing a repository.
 
-### 📄 README File Template
-Every repository **MUST** include a `README.md` file at the root. Please include:
-1. **Project Description**: What is this project for?
-2. **Prerequisites**: Required OS, ROS version, Python version, etc.
-3. **How to Run**: Step-by-step commands to execute the code.
+- Use hyphens (-) to separate words.
+- Every repository name must start with one of the three prefixes: Robot-, Data-, or Algo-.
+- The *** suffix is optional. Add it only if you need to provide more context, such as the programming language used or a sub-task name.
 
----
+### 1. Robot-[Hardward name]-***
+- **Description:** Source code used to control, drive, or operate robotics hardware (including firmware, ROS packages, and actuators).
+- Examples: Robot-Slip_Motor_Shoe, Robot-Wearable_Robot-Hip_Flexion_Control
 
-## 🌿 2. Git Workflow (How to Commit & Collaborate)
+### 2. Data-[Sensor or Equipment name]-***
+- **Description:** Source code dedicated to analyzing, processing, filtering, or visualizing data collected from specific sensors or lab equipment.
+- Examples: Data-IMU-Analysis_Gait_Metric-Python, Data-Mocap-Analysis_Gait_Metric-Matlab, Data-WIM
 
-### 📌 Branch Strategy
-* `main` : Stable code that is fully tested. (Do not commit directly to `main`!)
-* `feature/***` : Develop new features or research specific topics here (e.g., `feature/vqf-optimization`).
+### 3. Algo-[Purpose of algorithm or Algorithm objective]-***
+- **Description:** Source code focusing on the development, implementation, and testing of core algorithms, estimation models, or signal processing methods (independent of specific hardware setups).
+- Examples: Algo-VQF, Algo-Gait_Event_Detection
 
-### 🤝 Pull Request (PR) & Review
-* Once your feature is ready, open a **Pull Request** to the `main` branch.
-* At least **1 other member** must review and approve your code before merging.
+## 3. README.md file templete
 
----
-💡 *If you have any questions about this guide, please open an Issue or contact the administrator.*
+## 4. Managing Repositories via Git Commands
